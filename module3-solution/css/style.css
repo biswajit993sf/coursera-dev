@@ -1,0 +1,42 @@
+.header-holder{
+    background-color: yellow;
+}
+.box .inner{
+    color: #fff;
+    position: relative;
+}
+.box .inner::after{
+    content: "";
+    height: 6px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: .5s ease all;
+}
+.box .inner:hover::after{
+    width: 100%;
+}
+.box-1 .inner::after{
+    background-color:#122a74;
+}
+.box-2 .inner::after{
+    background-color:#076627;
+}
+.box-3 .inner::after{
+    background-color:#890c0c;
+}
+.box-1 .inner{
+    background-color:#0033cc;
+}
+.box-2 .inner{
+    background-color:#009933;
+}
+.box-3 .inner{
+    background-color:#cc0000;
+}
+@media (min-width: 576px) {
+.navbar-expand-lg .navbar-collapse.d-sm-none {
+    display: none!important;
+}
+}
